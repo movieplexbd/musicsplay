@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
-    <background android:drawable="@color/accent"/>
-    <foreground>
-        <inset android:inset="20%">
-            <vector android:height="108dp"
-                android:width="108dp"
-                android:viewportHeight="24"
-                android:viewportWidth="24">
-                <path android:fillColor="#121212"
-                    android:pathData="M12,3v10.55c-0.59-0.34-1.27-0.55-2-0.55C7.79,13 6,14.79 6,17s1.79,4 4,4 4-1.79 4-4V7h4V3h-6z"/>
-            </vector>
-        </inset>
-    </foreground>
-</adaptive-icon>
+  <!-- Simple launcher icon for API 21-25 (non-adaptive) -->
+  <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+      <item>
+          <shape android:shape="rectangle">
+              <solid android:color="#1DB954"/>
+          </shape>
+      </item>
+      <item android:top="20%" android:bottom="20%" android:left="20%" android:right="20%">
+          <shape android:shape="oval">
+              <solid android:color="#121212"/>
+          </shape>
+      </item>
+  </layer-list>
