@@ -1,0 +1,42 @@
+name: Build APK
+
+# Trigger this workflow on every push to any branch
+on:
+  push:
+    branches:
+      - '**'
+
+jobs:
+  build:
+    name: Build Debug APK
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Check out the repository code
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Step 2: Set up JDK 17 (required by AGP 8.x)
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: gradle
+
+      # Step 3: Give execution permission to the Gradle wrapper script
+      - name: Grant execute permission to gradlew
+        run: chmod +x gradlew
+
+      # Step 4: Build the debug APK using the Gradle wrapper
+      - name: Build Debug APK
+        run: ./gradlew assembleDebug --no-daemon --stacktrace
+
+      # Step 5: Upload the built APK as a downloadable artifact
+      # Download it from the Actions run page → "Artifacts" section
+      - name: Upload APK artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: musicsplay-apk
+          path: app/build/outputs/apk/debug/app-debug.apk
+          retention-days: 30  # Keep the APK available for 30 days
