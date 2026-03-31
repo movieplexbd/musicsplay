@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        App theme — extends Material3 dark theme.
+        Sets the status bar to match our dark background.
+    -->
+    <style name="Theme.MusicSplay" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary accent color -->
+        <item name="colorPrimary">@color/accent</item>
+        <item name="colorPrimaryVariant">@color/accent</item>
+        <item name="colorOnPrimary">@color/bg_dark</item>
+        <!-- Background -->
+        <item name="android:windowBackground">@color/bg_dark</item>
+        <item name="android:statusBarColor">@color/bg_dark</item>
+        <item name="android:navigationBarColor">@color/surface</item>
+    </style>
+</resources>
