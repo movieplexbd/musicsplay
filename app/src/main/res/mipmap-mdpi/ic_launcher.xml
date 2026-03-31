@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-  <!-- Simple launcher icon for API 21-25 (non-adaptive) -->
-  <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-      <item>
-          <shape android:shape="rectangle">
-              <solid android:color="#1DB954"/>
-          </shape>
-      </item>
-      <item android:top="20%" android:bottom="20%" android:left="20%" android:right="20%">
-          <shape android:shape="oval">
-              <solid android:color="#121212"/>
-          </shape>
-      </item>
-  </layer-list>
+  <shape xmlns:android="http://schemas.android.com/apk/res/android"
+      android:shape="rectangle">
+      <solid android:color="#1DB954"/>
+  </shape>
