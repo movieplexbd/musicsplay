@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MusicSplay</string>
+    <string name="now_playing">Now Playing</string>
+    <string name="no_song">Select a song to play</string>
+    <!-- Content descriptions for accessibility -->
+    <string name="cd_play_pause">Play or Pause</string>
+    <string name="cd_next">Next song</string>
+    <string name="cd_prev">Previous song</string>
+</resources>
