@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark background — main screen -->
+    <color name="bg_dark">#121212</color>
+    <!-- Slightly lighter surface — player card -->
+    <color name="surface">#1E1E1E</color>
+    <!-- Accent / highlight color -->
+    <color name="accent">#1DB954</color>
+    <!-- Primary text -->
+    <color name="text_primary">#FFFFFF</color>
+    <!-- Secondary / subdued text -->
+    <color name="text_secondary">#B3B3B3</color>
+    <!-- Divider lines -->
+    <color name="divider">#2A2A2A</color>
+    <!-- Selected row background -->
+    <color name="selected_row">#1A3A24</color>
+    <!-- Ripple effect color -->
+    <color name="ripple">#2D2D2D</color>
+</resources>
